@@ -12,7 +12,6 @@ import numpy as np
 direct = 'C:/Dropbox (Personal)/Autocross/BMWCCA/workerassignment/old worker assignment lists/' # directory with files
 file_list = os.listdir(direct)
 
-
 for k in range(0,len(file_list)):
 
   
@@ -24,7 +23,7 @@ for k in range(0,len(file_list)):
     
     wkass = wkbk.sheet_by_index(0) # import the first sheet which has worker assignments
     
-    # import whole sheet into an array in python
+    # import whole sheet into a list of lists in python, columns then rows
     
     num_cols = wkass.ncols
     num_rows = wkass.nrows
